@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
-:root {
 $black: hsl(0, 0%, 0%);
 $darkgray: hsl(0, 0%, 48%);
 $lightgray: hsl(0, 0%, 98%);
 $Darkcyan: hsl(176, 72%, 28%);
 $Moderatecyan: hsl(176, 50%, 47%);
-}
 
 html {
     font-family: 'Commissioner', sans-serif;
@@ -21,27 +19,32 @@ header {
     }
 }
 main {
-    background: var(--lightgray);
-
+    background: $lightgray;
     .top-section {
         position: relative;
         width: 40rem;
-        height: 100px;
+        height: 17rem;
         margin: 0 auto;
-        padding-bottom: 25rem;
         background: #ffff;
         bottom: 3rem;
+        border-radius: 10px;
         h1 {
             font-size: 1.5rem;
             text-align: center;
-            color: ;
+            color: $black;
+            padding-top: 2rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            text-align: center;
+            color: $darkgray;
         }
     }
     .middle-section {
-        width: 20rem;
-        height: 100px;
+        width: 40rem;
+        height: 10rem;
         margin: 0 auto;
         background: #ffff;
-    }
-    
+        border-radius: 10px;
+    }   
 }

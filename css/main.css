@@ -11,20 +11,27 @@ header {
     justify-content: space-between; }
 
 main {
-  background: var(--lightgray); }
+  background: #fafafa; }
   main .top-section {
     position: relative;
     width: 40rem;
-    height: 100px;
+    height: 17rem;
     margin: 0 auto;
-    padding-bottom: 25rem;
     background: #ffff;
-    bottom: 3rem; }
+    bottom: 3rem;
+    border-radius: 10px; }
     main .top-section h1 {
       font-size: 1.5rem;
-      text-align: center; }
+      text-align: center;
+      color: black;
+      padding-top: 2rem; }
+    main .top-section h2 {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #7a7a7a; }
   main .middle-section {
-    width: 20rem;
-    height: 100px;
+    width: 40rem;
+    height: 10rem;
     margin: 0 auto;
-    background: #ffff; }
+    background: #ffff;
+    border-radius: 10px; }
