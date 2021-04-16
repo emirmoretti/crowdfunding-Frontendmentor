@@ -10,34 +10,85 @@ html {
     font-family: 'Commissioner', sans-serif;
 }
 header {
-    background: url(/images/image-hero-desktop.jpg) no-repeat;
+    background: url(/images/image-hero-desktop.jpg);
     background-size: cover;
-    height: 400px;
-    .container-nav {
-        display: flex;
-        justify-content: space-between;
+    height: 360px;
+       /* hide close when burger shown */
+    .navbar-toggler.collapsed .close-icon {
+        display: none;
+     }
+     .navbar-toggler:not(.collapsed) .open-icon {
+        display: none;
+     }
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    }
+    .navbar-collapse {
+        padding-top: 2rem;
+        border-radius: 40px;
+    }
+    .nav-item {
+    background: #ffff;
+    text-align: center;
+    padding: 12px;
     }
 }
 main {
     background: $lightgray;
     .top-section {
         position: relative;
-        width: 40rem;
+        width: 15rem;
         height: 17rem;
         margin: 0 auto;
         background: #ffff;
-        bottom: 3rem;
+        bottom: 4.5rem;
         border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .logomastercraft {
+            position: absolute;
+            margin: 0 auto;
+            top: -30px;
+        }
         h1 {
             font-size: 1.5rem;
             text-align: center;
             color: $black;
-            padding-top: 2rem;
+            padding-top: 3rem;
+            font-weight: bold;
         }
         h2 {
-            font-size: 1.1rem;
+            font-size: 16px;
+            font-weight: 400;
             text-align: center;
             color: $darkgray;
+        }
+        .button1 {
+            align-self: flex-end;
+            text-decoration: none;
+            background: $Moderatecyan;
+            color: #ffff;
+            padding: 10px;
+            border-radius: 30px;
+            font-weight: 500;
+            &:hover {
+                background: $Darkcyan;
+                transition: 1s;
+            }
+        }
+        .bookmark {
+            align-self: flex-end;
+            text-decoration: none;
+            background: $Moderatecyan;
+            color: #ffff;
+            padding: 10px;
+            border-radius: 30px;
         }
     }
     .middle-section {
@@ -47,4 +98,12 @@ main {
         background: #ffff;
         border-radius: 10px;
     }   
+    .bottom-section {
+        width: 40rem;
+        height: 30rem;
+        margin: 0 auto;
+        background: #ffff;
+        border-radius: 10px;
+        margin-top: 45px;
+    }
 }
