@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Crowdfunding product page</title>
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,7 +18,7 @@
         <img src="images/logo.svg" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="images/icon-hamburger.svg" alt="" class="open-icon">
+        <img src="images/icon-hamburger.svg" alt="" class="open-icon py-1">
         <img src="images/icon-close-menu.svg" alt="" class="close-icon py-1">
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,21 +43,34 @@
       <img src="/images/logo-mastercraft.svg" alt="logo-mastercraft" class="logomastercraft img-fluid">
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <h2>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h2>
-      <a href="#" class="button1">Back this project </a>
-      <div class="bookmark">
-          <a href="">Bookmark</a>
-          <img src="" alt="">
-      </div>
+      <button class="button1">
+        <a href="#" class="">Back this project </a>
+      </button>
+      <button class="bookmark" id="bookmark" onclick="ani()">
+          <label href="">bookmark</label>
+          <img src="images/icon-bookmark.svg" alt="" class="img-fluid"> 
+      </button>
       </section>
 
     <section class="middle-section">
-      <p>$89,914 of $100,000 backed</p>
-      <p>5,007 total backers</p>
-      <p>56 days left</p>
+      <div>
+        <h2>$89,914</h2> 
+        <p>of $100,000 backed</p>
+      </div>
+      <hr>
+      <div>
+        <h2>5,007</h2> 
+        <p>total backers</p>
+      </div>
+      <hr>
+      <div>
+        <h2>56</h2>
+        <p>days left</p>
+      </div>
     </section>
     
     <section class="bottom-section">
-      <h2>About this project</h2>
+      <h3>About this project</h3>
       
       <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
       to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
@@ -64,32 +78,37 @@
       
       <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
       to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+      <div>
+        <h4>Bamboo Stand</h4>
+          <h5>Pledge $25 or more</h5>
+          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+          you’ll be added to a special Backer member list.</p>
+          <p><span>101</span> left</p>
+          <button><a href="#">Select Reward</a></button>
+      </div>
       
-      <p>Bamboo Stand
-      Pledge $25 or more
-      You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
-      you’ll be added to a special Backer member list.
-      101 left
-      Select Reward</p>
+      <div>
+        <h4>Black Edition Stand</h4>
+        <h5>Pledge $75 or more</h5>
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+        member list. Shipping is included.</p>
+        <p><span>64</span> left</p>
+        <button><a href="">Select Reward</a></button>
+      </div>
       
-      <p>Black Edition Stand
-      Pledge $75 or more
-      You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-      member list. Shipping is included.
-      64 left
-      Select Reward</p>
-      
-      <p>Mahogany Special Edition
-      Pledge $200 or more
-      You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-      to our Backer member list. Shipping is included.
-      0 left
-      Out of Stock</p>
-    </section>
+      <div>
+        <h4 class="text-muted">Mahogany Special Edition</h4>
+        <h5>Pledge $200 or more</h5>
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+        to our Backer member list. Shipping is included.</p>
+        <p><span>0</span> left</p>
+        <button class="out"><a href="">Out of Stock</a></button>
+      </div>
+      </section>
       
   </main>
-
-    <!-- Selection modal start -->
+  
+    <!--//Selection modal start//
     
     Back this project
     Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
@@ -104,11 +123,11 @@
     you’ll be added to a special Backer member list.
     101 left
     
-    <!-- Selected pledge start -->
+    //Selected pledge start//
     Enter your pledge
     $25
     Continue
-    <!-- Selected pledge end -->
+    //Selected pledge end//
     
     Black Edition Stand
     Pledge $75 or more
@@ -116,11 +135,11 @@
     member list. Shipping is included.
     64 left
     
-    <!-- Selected pledge start -->
+    //Selected pledge start//
     Enter your pledge
     $75
     Continue
-    <!-- Selected pledge end -->
+    //Selected pledge end//
     
     Mahogany Special Edition
     Pledge $200 or more
@@ -128,21 +147,22 @@
     to our Backer member list. Shipping is included.
     0 left
     
-    <!-- Selected pledge  start -->
+    // Selected pledge  start//
     Enter your pledge
     $200
     Continue
-    <!-- Selected pledge end -->
+    // Selected pledge end -->
     
     <!-- Selection modal end -->
     
-    <!-- Success modal start -->
+    <!-- Success modal start //
     
     Thanks for your support!
     Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
     an email once our campaign is completed.
     Got it!
-    <!-- Success modal end -->
+    Success modal end -->
  <script src="js/bootstrap.bundle.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>

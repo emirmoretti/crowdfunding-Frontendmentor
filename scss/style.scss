@@ -3,22 +3,28 @@
 $black: hsl(0, 0%, 0%);
 $darkgray: hsl(0, 0%, 48%);
 $lightgray: hsl(0, 0%, 98%);
+$gray88: hsl(0, 0%, 88%);
 $Darkcyan: hsl(176, 72%, 28%);
 $Moderatecyan: hsl(176, 50%, 47%);
-
-html {
+:root {
     font-family: 'Commissioner', sans-serif;
+}
+html {
+    background: $lightgray;
 }
 header {
     background: url(/images/image-hero-desktop.jpg);
     background-size: cover;
     height: 360px;
        /* hide close when burger shown */
-    .navbar-toggler.collapsed .close-icon {
+    .close-icon {
         display: none;
-     }
+    }
      .navbar-toggler:not(.collapsed) .open-icon {
         display: none;
+     }
+     .navbar-toggler:not(.collapsed) .close-icon {
+        display: block;
      }
     .navbar-toggler,
     .navbar-toggler:focus,
@@ -42,7 +48,7 @@ main {
     background: $lightgray;
     .top-section {
         position: relative;
-        width: 15rem;
+        width: 19rem;
         height: 17rem;
         margin: 0 auto;
         background: #ffff;
@@ -51,6 +57,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
         .logomastercraft {
             position: absolute;
             margin: 0 auto;
@@ -60,7 +68,6 @@ main {
             font-size: 1.5rem;
             text-align: center;
             color: $black;
-            padding-top: 3rem;
             font-weight: bold;
         }
         h2 {
@@ -77,33 +84,113 @@ main {
             padding: 10px;
             border-radius: 30px;
             font-weight: 500;
+            border: none;
             &:hover {
                 background: $Darkcyan;
                 transition: 1s;
             }
+            a {
+                text-decoration: none;
+                color: #ffff;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
         }
         .bookmark {
             align-self: flex-end;
-            text-decoration: none;
-            background: $Moderatecyan;
-            color: #ffff;
-            padding: 10px;
-            border-radius: 30px;
+            /*text-decoration: none;
+            background: $Moderatecyan;*/
+            width: 3.5rem;
+            margin-left: 10px;
+            border: none;
+            background: none;
+            label {
+                display: none;
+            }
         }
     }
     .middle-section {
-        width: 40rem;
-        height: 10rem;
+        width: 19rem;
+        height: 24rem;
         margin: 0 auto;
         background: #ffff;
         border-radius: 10px;
+        position: relative;
+        bottom: 2rem;
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            padding-top: 1rem;
+        }
+        p {
+            text-align: center;
+            color: $darkgray;
+        }
+        hr {
+            border: 1px solid $darkgray;
+            width: 30%;
+            margin: 0 auto;
+        }
     }   
     .bottom-section {
-        width: 40rem;
-        height: 30rem;
+        width: 19rem;
+        height: 111rem;
         margin: 0 auto;
         background: #ffff;
         border-radius: 10px;
         margin-top: 45px;
+        position: relative;
+        bottom: 2rem;
+        padding: 15px;
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: $black;
+        }
+        p {
+            color: $darkgray;
+        }
+        div {
+            border: 1px solid $gray88;
+            margin-top: 30px;
+            border-radius: 10px;
+            padding: 2rem;
+            h4 {
+                font-weight: bold;
+            }
+            h5 {
+                font-weight: 400;
+                color: $Moderatecyan;
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            span {
+                font-size: 2rem;
+                font-weight: 700;
+                color: $black;
+                margin-right: 8px;
+            }
+            button {
+                display: block;
+                text-decoration: none;
+                background: $Moderatecyan;
+                color: #ffff;
+                padding: 12px;
+                border-radius: 30px;
+                font-weight: 500;
+                border: none;
+                a {
+                text-decoration: none;
+                color: #ffff;
+                padding-right: 12px;
+                padding-left: 12px;
+                }
+            }
+            .out {
+                background: $gray88;
+            }
+        }
     }
 }

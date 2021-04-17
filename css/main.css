@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
-html {
+:root {
   font-family: 'Commissioner', sans-serif; }
+
+html {
+  background: #fafafa; }
 
 header {
   background: url(/images/image-hero-desktop.jpg);
   background-size: cover;
   height: 360px;
   /* hide close when burger shown */ }
-  header .navbar-toggler.collapsed .close-icon {
+  header .close-icon {
     display: none; }
   header .navbar-toggler:not(.collapsed) .open-icon {
     display: none; }
+  header .navbar-toggler:not(.collapsed) .close-icon {
+    display: block; }
   header .navbar-toggler,
   header .navbar-toggler:focus,
   header .navbar-toggler:active,
@@ -30,7 +35,7 @@ main {
   background: #fafafa; }
   main .top-section {
     position: relative;
-    width: 15rem;
+    width: 19rem;
     height: 17rem;
     margin: 0 auto;
     background: #ffff;
@@ -38,7 +43,9 @@ main {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem; }
     main .top-section .logomastercraft {
       position: absolute;
       margin: 0 auto;
@@ -47,7 +54,6 @@ main {
       font-size: 1.5rem;
       text-align: center;
       color: black;
-      padding-top: 3rem;
       font-weight: bold; }
     main .top-section h2 {
       font-size: 16px;
@@ -61,27 +67,93 @@ main {
       color: #ffff;
       padding: 10px;
       border-radius: 30px;
-      font-weight: 500; }
+      font-weight: 500;
+      border: none; }
       main .top-section .button1:hover {
         background: #147b74;
         transition: 1s; }
+      main .top-section .button1 a {
+        text-decoration: none;
+        color: #ffff;
+        padding-right: 2rem;
+        padding-left: 2rem; }
     main .top-section .bookmark {
       align-self: flex-end;
-      text-decoration: none;
-      background: #3cb4ac;
-      color: #ffff;
-      padding: 10px;
-      border-radius: 30px; }
+      /*text-decoration: none;
+            background: $Moderatecyan;*/
+      width: 3.5rem;
+      margin-left: 10px;
+      border: none;
+      background: none; }
+      main .top-section .bookmark label {
+        display: none; }
   main .middle-section {
-    width: 40rem;
-    height: 10rem;
-    margin: 0 auto;
-    background: #ffff;
-    border-radius: 10px; }
-  main .bottom-section {
-    width: 40rem;
-    height: 30rem;
+    width: 19rem;
+    height: 24rem;
     margin: 0 auto;
     background: #ffff;
     border-radius: 10px;
-    margin-top: 45px; }
+    position: relative;
+    bottom: 2rem; }
+    main .middle-section h2 {
+      text-align: center;
+      font-weight: 700;
+      padding-top: 1rem; }
+    main .middle-section p {
+      text-align: center;
+      color: #7a7a7a; }
+    main .middle-section hr {
+      border: 1px solid #7a7a7a;
+      width: 30%;
+      margin: 0 auto; }
+  main .bottom-section {
+    width: 19rem;
+    height: 111rem;
+    margin: 0 auto;
+    background: #ffff;
+    border-radius: 10px;
+    margin-top: 45px;
+    position: relative;
+    bottom: 2rem;
+    padding: 15px; }
+    main .bottom-section h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: black; }
+    main .bottom-section p {
+      color: #7a7a7a; }
+    main .bottom-section div {
+      border: 1px solid #e0e0e0;
+      margin-top: 30px;
+      border-radius: 10px;
+      padding: 2rem; }
+      main .bottom-section div h4 {
+        font-weight: bold; }
+      main .bottom-section div h5 {
+        font-weight: 400;
+        color: #3cb4ac;
+        font-size: 1rem;
+        margin-bottom: 1.5rem; }
+      main .bottom-section div span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: black;
+        margin-right: 8px; }
+      main .bottom-section div button {
+        display: block;
+        text-decoration: none;
+        background: #3cb4ac;
+        color: #ffff;
+        padding: 12px;
+        border-radius: 30px;
+        font-weight: 500;
+        border: none; }
+        main .bottom-section div button a {
+          text-decoration: none;
+          color: #ffff;
+          padding-right: 12px;
+          padding-left: 12px; }
+      main .bottom-section div .out {
+        background: #e0e0e0; }
