@@ -5,6 +5,57 @@
 html {
   background: #fafafa; }
 
+.modal-content {
+  border-radius: 15px; }
+  .modal-content .modal-header {
+    border: none; }
+    .modal-content .modal-header .modal-title {
+      font-size: 1.5rem;
+      font-weight: bold; }
+  .modal-content .modal-body {
+    display: flex;
+    flex-direction: column; }
+    .modal-content .modal-body .div__container--modal {
+      border: 1px solid #e0e0e0;
+      margin-top: 30px;
+      border-radius: 10px;
+      padding: 2rem; }
+      .modal-content .modal-body .div__container--modal .div__header--modal {
+        display: flex; }
+
+#modal-check .modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #modal-check .modal-header img, #modal-check .modal-header h2 {
+    margin: 20px; }
+
+#modal-check .modal-body p {
+  text-align: center;
+  color: #7a7a7a; }
+
+#modal-check .modal-footer {
+  border: none;
+  display: flex;
+  justify-content: center; }
+  #modal-check .modal-footer button {
+    text-decoration: none;
+    background: #3cb4ac;
+    color: #ffff;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: none;
+    padding-right: 2rem;
+    padding-left: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    background: transparent !important;
+    border: none !important; }
+    .nav-item .nav-link {
+      color: white !important; } }
+
 header {
   background: url(/images/image-hero-desktop.jpg);
   background-size: cover;
@@ -28,8 +79,17 @@ header {
     border-radius: 40px; }
   header .nav-item {
     background: #ffff;
-    text-align: center;
-    padding: 12px; }
+    text-align: start;
+    padding: 12px;
+    font-weight: bold; }
+  header .nav-radius-top {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid #7a7a7a; }
+  header .nav-radius-bot {
+    border-top: 1px solid #7a7a7a;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
 
 main {
   background: #fafafa; }
@@ -155,5 +215,5 @@ main {
           color: #ffff;
           padding-right: 12px;
           padding-left: 12px; }
-      main .bottom-section div .out {
+      main .bottom-section div .btn-out {
         background: #e0e0e0; }

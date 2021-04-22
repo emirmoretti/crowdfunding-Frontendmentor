@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+    .nav-item {
+        background: transparent !important;
+        border: none !important;
+        .nav-link {
+            color: white !important;
+        }
+    }
+}
