@@ -6,6 +6,7 @@ $lightgray: hsl(0, 0%, 98%);
 $gray88: hsl(0, 0%, 88%);
 $Darkcyan: hsl(176, 72%, 28%);
 $Moderatecyan: hsl(176, 50%, 47%);
+
 :root {
     font-family: 'Commissioner', sans-serif;
 }
@@ -13,3 +14,10 @@ $Moderatecyan: hsl(176, 50%, 47%);
 html {
     background: $lightgray;
 }
+
+// media query
+@mixin media($size) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }

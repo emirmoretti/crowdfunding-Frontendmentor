@@ -1,19 +1,21 @@
-@import "config", "modal", "media";
+@import "config", "modal";
 
 header {
     background: url(/images/image-hero-desktop.jpg);
     background-size: cover;
     height: 360px;
        /* hide close when burger shown */
-    .close-icon {
+
+    .close-icon{
+         display: none;
+    }   
+     .navbar-toggler:not(.collapsed) .open-icon{
+        display: block;
+    }
+    .navbar-toggler:not(.collapsed) .close-icon{
         display: none;
     }
-     .navbar-toggler:not(.collapsed) .open-icon {
-        display: none;
-     }
-     .navbar-toggler:not(.collapsed) .close-icon {
-        display: block;
-     }
+     
     .navbar-toggler,
     .navbar-toggler:focus,
     .navbar-toggler:active,
@@ -104,7 +106,7 @@ main {
             border: none;
             background: none;
             label {
-                display: none;
+                visibility: hidden;
             }
         }
     }
@@ -130,10 +132,26 @@ main {
             width: 30%;
             margin: 0 auto;
         }
+        .progress-bar {
+            height: 1rem;
+            margin-top: 3rem;
+            width: 70%;
+            background: hsl(0, 0%, 93%);
+            border-radius: 25px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 3rem;
+            .progress {
+              height: 100%;
+              border-radius: 25px;
+              width: 90%;
+              background: $Moderatecyan;
+            }
+          }
     }   
     .bottom-section {
         width: 19rem;
-        height: 111rem;
+        height: 113rem;
         margin: 0 auto;
         background: #ffff;
         border-radius: 10px;
@@ -190,6 +208,76 @@ main {
             .btn-out {
                 background: $gray88;
             }
+        }
+    }
+}
+
+@include media(768px) {
+    .nav-item {
+        background: transparent !important;
+        border: none !important;
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+    main {
+        .top-section {
+            display: flex;
+            width: 44rem;
+            height: 20rem;
+            padding: 48px;
+            .button1 {
+                padding: 16px;
+            }
+            .bookmark {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                justify-content: flex-end;
+                label {
+                    visibility: visible;
+                    order: 1;
+                }
+            }
+        }
+        .middle-section {
+            width: 44rem;
+            height: 20rem;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            .middle__div {
+                padding-right: 50px;
+                padding-left: 50px;
+                border-left: 1px solid $darkgray;
+            }
+            .noborder {
+                border: none;
+            }
+            .progress-bar {
+                height: 1rem;
+                margin-top: 3rem;
+                width: 40rem;
+                background: hsl(0, 0%, 93%);
+                border-radius: 25px;
+                overflow: hidden;
+                .progress {
+                  height: 100%;
+                  border-radius: 25px;
+                  width: 90%;
+                  background: $Moderatecyan;
+                }
+              }
+            hr{
+                display: none;
+            }
+        }
+        .bottom-section{
+            width: 44rem;
+            height: 87rem;
+            padding: 40px;
         }
     }
 }

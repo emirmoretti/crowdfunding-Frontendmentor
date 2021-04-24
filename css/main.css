@@ -49,13 +49,6 @@ html {
     padding-right: 2rem;
     padding-left: 2rem; }
 
-@media screen and (min-width: 768px) {
-  .nav-item {
-    background: transparent !important;
-    border: none !important; }
-    .nav-item .nav-link {
-      color: white !important; } }
-
 header {
   background: url(/images/image-hero-desktop.jpg);
   background-size: cover;
@@ -64,9 +57,9 @@ header {
   header .close-icon {
     display: none; }
   header .navbar-toggler:not(.collapsed) .open-icon {
-    display: none; }
-  header .navbar-toggler:not(.collapsed) .close-icon {
     display: block; }
+  header .navbar-toggler:not(.collapsed) .close-icon {
+    display: none; }
   header .navbar-toggler,
   header .navbar-toggler:focus,
   header .navbar-toggler:active,
@@ -146,7 +139,7 @@ main {
       border: none;
       background: none; }
       main .top-section .bookmark label {
-        display: none; }
+        visibility: hidden; }
   main .middle-section {
     width: 19rem;
     height: 24rem;
@@ -166,9 +159,23 @@ main {
       border: 1px solid #7a7a7a;
       width: 30%;
       margin: 0 auto; }
+    main .middle-section .progress-bar {
+      height: 1rem;
+      margin-top: 3rem;
+      width: 70%;
+      background: #ededed;
+      border-radius: 25px;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-top: 3rem; }
+      main .middle-section .progress-bar .progress {
+        height: 100%;
+        border-radius: 25px;
+        width: 90%;
+        background: #3cb4ac; }
   main .bottom-section {
     width: 19rem;
-    height: 111rem;
+    height: 113rem;
     margin: 0 auto;
     background: #ffff;
     border-radius: 10px;
@@ -217,3 +224,57 @@ main {
           padding-left: 12px; }
       main .bottom-section div .btn-out {
         background: #e0e0e0; }
+
+@media (min-width: 768px) {
+  .nav-item {
+    background: transparent !important;
+    border: none !important; }
+    .nav-item .nav-link {
+      color: white !important;
+      font-weight: 500;
+      font-size: 1.2rem; }
+  main .top-section {
+    display: flex;
+    width: 44rem;
+    height: 20rem;
+    padding: 48px; }
+    main .top-section .button1 {
+      padding: 16px; }
+    main .top-section .bookmark {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end; }
+      main .top-section .bookmark label {
+        visibility: visible;
+        order: 1; }
+  main .middle-section {
+    width: 44rem;
+    height: 20rem;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; }
+    main .middle-section .middle__div {
+      padding-right: 50px;
+      padding-left: 50px;
+      border-left: 1px solid #7a7a7a; }
+    main .middle-section .noborder {
+      border: none; }
+    main .middle-section .progress-bar {
+      height: 1rem;
+      margin-top: 3rem;
+      width: 40rem;
+      background: #ededed;
+      border-radius: 25px;
+      overflow: hidden; }
+      main .middle-section .progress-bar .progress {
+        height: 100%;
+        border-radius: 25px;
+        width: 90%;
+        background: #3cb4ac; }
+    main .middle-section hr {
+      display: none; }
+  main .bottom-section {
+    width: 44rem;
+    height: 87rem;
+    padding: 40px; } }
