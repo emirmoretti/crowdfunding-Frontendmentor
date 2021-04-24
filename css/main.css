@@ -54,11 +54,9 @@ header {
   background-size: cover;
   height: 360px;
   /* hide close when burger shown */ }
-  header .close-icon {
+  header .navbar-toggler.collapsed .close-icon {
     display: none; }
   header .navbar-toggler:not(.collapsed) .open-icon {
-    display: block; }
-  header .navbar-toggler:not(.collapsed) .close-icon {
     display: none; }
   header .navbar-toggler,
   header .navbar-toggler:focus,
