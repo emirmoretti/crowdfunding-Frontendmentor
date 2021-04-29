@@ -21,3 +21,13 @@ html {
       @content;
     }
   }
+
+.button1 {
+  text-decoration: none;
+  background: $Moderatecyan;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none;
+}

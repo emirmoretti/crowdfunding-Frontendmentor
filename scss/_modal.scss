@@ -1,5 +1,7 @@
 .modal-content {
     border-radius: 15px;
+    width: 20rem;
+    margin: 0 auto;
     .modal-header {
         border: none;
         .modal-title {
@@ -10,13 +12,39 @@
     .modal-body {
         display: flex;
         flex-direction: column;
-        .div__container--modal {
-            border: 1px solid $gray88;
+        p {
+            color: $darkgray;
+        }
+        .modal--section {
+            border: 1px solid $Moderatecyan;
             margin-top: 30px;
             border-radius: 10px;
-            padding: 2rem;
-            .div__header--modal {
+            padding: 0;
+            p {
+                text-align: center;
+            }
+            div[aria-expanded=true] .tituloModal {
+                color: $Moderatecyan;
+            }
+            .modal--show {
                 display: flex;
+                flex-direction: column;
+                .tituloModal {
+                    font-weight: bold;
+                }
+            }
+            .modal--collapse.show {
+                width: 100%;
+                padding: 2px;
+                border-top: 1px solid $Moderatecyan;
+                .card-body {
+                    padding: 10px;
+                    border: none !important;
+                    div {
+                        display: flex;
+                        padding: 10px;
+                    }
+                }
             }
         }
     }
@@ -53,4 +81,12 @@
             padding-left: 2rem;
         }
     }
+}
+
+.circle {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid $Moderatecyan;
+    border-radius: 50%;
+    background: white;
 }

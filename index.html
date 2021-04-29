@@ -113,34 +113,110 @@
       <div class="modal fade" id="first-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
+            <!--Modal header-->
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Back this project</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <!--Modal body-->
             <div class="modal-body">
               <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-              <div class="div__container--modal">
-                <div class="div__header--modal">
-                  <p>Pledge with no reward</p>
+              <!--Primer modal-->
+              <div class="modal--section">
+                <div class="modal--show btn"  data-bs-toggle="collapse" href="#collapseModal1" role="button" aria-expanded="false" aria-controls="collapseModal1" id="primerModal">
+                      <div class="circle" id="circle"></div>
+                      <h6 class="tituloModal">Pledge with no reward</h6>
+                      <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+                        you will be signed up to receive product updates via email.</p>
                 </div>
-                Choose to support us without a reward if you simply believe in our project. As a backer, 
-                you will be signed up to receive product updates via email.
+                <div class="collapse modal--collapse" id="collapseModal1">
+                      <div class="card card-body">
+                          <p> Enter your pledge</p>
+                          <div>
+                            <input type="text" name="" id="" value="$25">
+                            <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#modal-check"><a>Select Reward</a></button>
+                          </div>
+                      </div>
+                </div>
               </div>
-
-
-
+              <!--Segundo modal-->
+              <div class="modal--section">
+                  <div class="modal--show" data-bs-toggle="collapse" href="#collapseModal2" role="button" aria-expanded="false" aria-controls="collapseModal2">
+                      <div class="circle" id="circle"></div>
+                      <h6 class="btn tituloModal">Bamboo Stand</h6>
+                      <p>Pledge $25 or more</p>
+                      <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                      you’ll be added to a special Backer member list.</p>
+                      <p>101 left</p>
+                  </div>
+                  <div class="collapse modal--collapse" id="collapseModal2">
+                        <div class="card card-body">
+                          <p> Enter your pledge</p>
+                          <div>
+                            <input type="text" name="" id="" value="$25">
+                            <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#modal-check"><a>Select Reward</a></button>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+              <!--Tercer modal-->
+              <div class="modal--section">
+                <div class="modal--show btn" data-bs-toggle="collapse" href="#collapseModal3" role="button" aria-expanded="false" aria-controls="collapseModal3">
+                  <div class="circle" id="circle"></div>
+                  <h6 class="tituloModal" >Black Edition Stand</h6>
+                  <p>Pledge $75 or more</p>
+                  <p>64 left</p>
+                  <p>
+                    Choose to support us without a reward if you simply believe in our project. As a backer, 
+                    you will be signed up to receive product updates via email.
+                  </p> 
+                  <p>64 left</p>
+                </div>
+                <div class="collapse modal--collapse" id="collapseModal3">
+                  <div class="card card-body">
+                    <p> Enter your pledge</p>
+                    <div>
+                      <input type="text" name="" id="" value="$25">
+                      <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#modal-check"><a>Select Reward</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Cuarto modal-->
+              <div class="modal--section">
+                <div class="modal--show btn" data-bs-toggle="collapse" href="#collapseModal4" role="button" aria-expanded="false" aria-controls="collapseModal4">
+                      <div class="circle" id="circle"></div>
+                      <h6 class="tituloModal">Mahogany Special Edition</h6>
+                      <p>Pledge $200 or more</p>
+                      <p>
+                        Choose to support us without a reward if you simply believe in our project. As a backer, 
+                        you will be signed up to receive product updates via email.
+                      </p>
+                      <p>0 left</p>
+                </div>
+                <div class="collapse modal--collapse" id="collapseModal4">
+                  <div class="card card-body">
+                    <p> Enter your pledge</p>
+                    <div>
+                      <input type="text" name="" id="" value="$25">
+                      <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#modal-check"><a>Select Reward</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
         </div>
       </div>
+
       <!-- Modal check -->
       <div class="modal fade" id="modal-check" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content" id="modal-check">
             <div class="modal-header">
               <img src="images/icon-check.svg" alt="icon-check">
-              <h5 class="modal-title" id="exampleModalLabel">         Thanks for your support!</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Thanks for your support!</h5>
             </div>
             <div class="modal-body">
               <p>
@@ -162,30 +238,8 @@
 
     <!--//Selection modal start//
     
-    Back this project
-    Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+ 
     
-    Pledge with no reward
-    Choose to support us without a reward if you simply believe in our project. As a backer, 
-    you will be signed up to receive product updates via email.
-    
-    Bamboo Stand
-    Pledge $25 or more
-    You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-    you’ll be added to a special Backer member list.
-    101 left
-    
-    //Selected pledge start//
-    Enter your pledge
-    $25
-    Continue
-    //Selected pledge end//
-    
-    Black Edition Stand
-    Pledge $75 or more
-    You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-    member list. Shipping is included.
-    64 left
     
     //Selected pledge start//
     Enter your pledge
@@ -204,16 +258,7 @@
     $200
     Continue
     // Selected pledge end -->
-    
-    <!-- Selection modal end -->
-    
-    <!-- Success modal start //
-    
-    Thanks for your support!
-    Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-    an email once our campaign is completed.
-    Got it!
-    Success modal end -->
+  <script src="js/main.js"></script>
  <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

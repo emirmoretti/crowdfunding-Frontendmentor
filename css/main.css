@@ -5,8 +5,19 @@
 html {
   background: #fafafa; }
 
+.button1 {
+  text-decoration: none;
+  background: #3cb4ac;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none; }
+
 .modal-content {
-  border-radius: 15px; }
+  border-radius: 15px;
+  width: 20rem;
+  margin: 0 auto; }
   .modal-content .modal-header {
     border: none; }
     .modal-content .modal-header .modal-title {
@@ -15,13 +26,32 @@ html {
   .modal-content .modal-body {
     display: flex;
     flex-direction: column; }
-    .modal-content .modal-body .div__container--modal {
-      border: 1px solid #e0e0e0;
+    .modal-content .modal-body p {
+      color: #7a7a7a; }
+    .modal-content .modal-body .modal--section {
+      border: 1px solid #3cb4ac;
       margin-top: 30px;
       border-radius: 10px;
-      padding: 2rem; }
-      .modal-content .modal-body .div__container--modal .div__header--modal {
-        display: flex; }
+      padding: 0; }
+      .modal-content .modal-body .modal--section p {
+        text-align: center; }
+      .modal-content .modal-body .modal--section div[aria-expanded=true] .tituloModal {
+        color: #3cb4ac; }
+      .modal-content .modal-body .modal--section .modal--show {
+        display: flex;
+        flex-direction: column; }
+        .modal-content .modal-body .modal--section .modal--show .tituloModal {
+          font-weight: bold; }
+      .modal-content .modal-body .modal--section .modal--collapse.show {
+        width: 100%;
+        padding: 2px;
+        border-top: 1px solid #3cb4ac; }
+        .modal-content .modal-body .modal--section .modal--collapse.show .card-body {
+          padding: 10px;
+          border: none !important; }
+          .modal-content .modal-body .modal--section .modal--collapse.show .card-body div {
+            display: flex;
+            padding: 10px; }
 
 #modal-check .modal-header {
   display: flex;
@@ -49,8 +79,15 @@ html {
     padding-right: 2rem;
     padding-left: 2rem; }
 
+.circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #3cb4ac;
+  border-radius: 50%;
+  background: white; }
+
 header {
-  background: url(/images/image-hero-desktop.jpg);
+  background: url(../images/image-hero-desktop.jpg);
   background-size: cover;
   height: 360px;
   /* hide close when burger shown */ }
