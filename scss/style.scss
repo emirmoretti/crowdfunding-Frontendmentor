@@ -289,11 +289,17 @@ main {
     }
     .modal-content {
         width: 40rem;
-        height: 75rem;
+        height: 90rem;
         padding: 30px;
         right: 60px;
+        .modal--section {
+           .modal--show {
+               padding: 20px;
+           }
+        }
     }
     #content-check {
         height: 30rem;
+        right: 78px;
     }
 }
