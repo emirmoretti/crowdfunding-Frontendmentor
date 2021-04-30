@@ -32,59 +32,90 @@ html {
       border: 1px solid #3cb4ac;
       margin-top: 30px;
       border-radius: 10px;
-      padding: 0; }
+      padding: 15px; }
       .modal-content .modal-body .modal--section p {
         text-align: center; }
-      .modal-content .modal-body .modal--section div[aria-expanded=true] .tituloModal {
+      .modal-content .modal-body .modal--section div[aria-expanded=true] .modal--top-container .circle .dot {
+        width: 50%;
+        height: 50%;
+        background: #3cb4ac;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-top: 4px; }
+      .modal-content .modal-body .modal--section div[aria-expanded=true] .modal--top-container .tituloModal {
         color: #3cb4ac; }
+        .modal-content .modal-body .modal--section div[aria-expanded=true] .modal--top-container .tituloModal span {
+          font-weight: bold; }
       .modal-content .modal-body .modal--section .modal--show {
         display: flex;
         flex-direction: column; }
-        .modal-content .modal-body .modal--section .modal--show .tituloModal {
-          font-weight: bold; }
-      .modal-content .modal-body .modal--section .modal--collapse.show {
+        .modal-content .modal-body .modal--section .modal--show .desktop {
+          display: none; }
+        .modal-content .modal-body .modal--section .modal--show .modal--top-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
+          .modal-content .modal-body .modal--section .modal--show .modal--top-container .circle {
+            width: 1.2rem;
+            height: 1.2rem;
+            border: 1px solid #3cb4ac;
+            border-radius: 50%;
+            background: white;
+            margin-bottom: 10px; }
+          .modal-content .modal-body .modal--section .modal--show .modal--top-container .tituloModal {
+            font-weight: bold;
+            padding-left: 15px;
+            line-height: 1.5rem; }
+            .modal-content .modal-body .modal--section .modal--show .modal--top-container .tituloModal span {
+              font-weight: 400;
+              color: #3cb4ac; }
+        .modal-content .modal-body .modal--section .modal--show .mobile {
+          text-align: start; }
+          .modal-content .modal-body .modal--section .modal--show .mobile span {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: black; }
+      .modal-content .modal-body .modal--section .modal--collapse {
         width: 100%;
         padding: 2px;
         border-top: 1px solid #3cb4ac; }
-        .modal-content .modal-body .modal--section .modal--collapse.show .card-body {
+        .modal-content .modal-body .modal--section .modal--collapse div {
           padding: 10px;
-          border: none !important; }
-          .modal-content .modal-body .modal--section .modal--collapse.show .card-body div {
-            display: flex;
-            padding: 10px; }
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around; }
+          .modal-content .modal-body .modal--section .modal--collapse div input {
+            width: 5rem;
+            height: 2.5rem;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid #e0e0e0; }
 
-#modal-check .modal-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #modal-check .modal-header img, #modal-check .modal-header h2 {
-    margin: 20px; }
-
-#modal-check .modal-body p {
-  text-align: center;
-  color: #7a7a7a; }
-
-#modal-check .modal-footer {
-  border: none;
-  display: flex;
-  justify-content: center; }
-  #modal-check .modal-footer button {
-    text-decoration: none;
-    background: #3cb4ac;
-    color: #ffff;
-    padding: 12px;
-    border-radius: 30px;
-    font-weight: 500;
+#modal-check {
+  margin: 0 auto; }
+  #modal-check .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #modal-check .modal-header img, #modal-check .modal-header h2 {
+      margin: 20px; }
+  #modal-check .modal-body p {
+    text-align: center;
+    color: #7a7a7a; }
+  #modal-check .modal-footer {
     border: none;
-    padding-right: 2rem;
-    padding-left: 2rem; }
-
-.circle {
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 1px solid #3cb4ac;
-  border-radius: 50%;
-  background: white; }
+    display: flex;
+    justify-content: center; }
+    #modal-check .modal-footer button {
+      text-decoration: none;
+      background: #3cb4ac;
+      color: #ffff;
+      padding: 12px;
+      border-radius: 30px;
+      font-weight: 500;
+      border: none;
+      padding-right: 2rem;
+      padding-left: 2rem; }
 
 header {
   background: url(../images/image-hero-desktop.jpg);
@@ -273,16 +304,24 @@ main {
     width: 44rem;
     height: 20rem;
     padding: 48px; }
-    main .top-section .button1 {
-      padding: 16px; }
-    main .top-section .bookmark {
+    main .top-section .bottom--section--main {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      flex-grow: 1;
-      justify-content: flex-end; }
-      main .top-section .bookmark label {
-        visibility: visible;
-        order: 1; }
+      flex-grow: 1; }
+      main .top-section .bottom--section--main .button1 {
+        padding: 16px; }
+      main .top-section .bottom--section--main .bookmark {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        cursor: default; }
+        main .top-section .bottom--section--main .bookmark img {
+          cursor: pointer; }
+        main .top-section .bottom--section--main .bookmark label {
+          visibility: visible;
+          order: 1; }
   main .middle-section {
     width: 44rem;
     height: 20rem;
@@ -312,4 +351,11 @@ main {
   main .bottom-section {
     width: 44rem;
     height: 87rem;
-    padding: 40px; } }
+    padding: 40px; }
+  .modal-content {
+    width: 40rem;
+    height: 75rem;
+    padding: 30px;
+    right: 60px; }
+  #content-check {
+    height: 30rem; } }

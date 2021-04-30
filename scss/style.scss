@@ -225,17 +225,27 @@ main {
             width: 44rem;
             height: 20rem;
             padding: 48px;
-            .button1 {
-                padding: 16px;
-            }
-            .bookmark {
+            .bottom--section--main {
                 display: flex;
+                justify-content: space-around;
                 align-items: center;
                 flex-grow: 1;
-                justify-content: flex-end;
-                label {
-                    visibility: visible;
-                    order: 1;
+                .button1 {
+                    padding: 16px;
+                }
+                .bookmark {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-grow: 1;
+                    cursor: default;
+                    img {
+                        cursor: pointer;
+                    }
+                    label {
+                        visibility: visible;
+                        order: 1;
+                    }
                 }
             }
         }
@@ -276,5 +286,14 @@ main {
             height: 87rem;
             padding: 40px;
         }
+    }
+    .modal-content {
+        width: 40rem;
+        height: 75rem;
+        padding: 30px;
+        right: 60px;
+    }
+    #content-check {
+        height: 30rem;
     }
 }
