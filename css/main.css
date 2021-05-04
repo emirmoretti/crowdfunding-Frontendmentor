@@ -328,13 +328,15 @@ main {
         main .top-section .bottom--section--main .bookmark-container #bookmark {
           cursor: pointer;
           position: relative;
-          left: 10px; }
+          left: 25px; }
         main .top-section .bottom--section--main .bookmark-container #label {
           display: inline-flex;
           order: 1;
           background-color: #e0e0e0;
           padding: 12px;
-          border-radius: 10px; }
+          padding-right: 30px;
+          padding-left: 30px;
+          border-radius: 30px; }
         main .top-section .bottom--section--main .bookmark-container .label-marked {
           color: #3cb4ac;
           animation-name: espacio;

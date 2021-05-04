@@ -254,14 +254,16 @@ main {
                     #bookmark {
                         cursor: pointer;
                         position: relative;
-                        left: 10px;
+                        left: 25px;
                     }
                     #label {
                         display: inline-flex;
                         order: 1;
                         background-color: $gray88;
                         padding: 12px;
-                        border-radius: 10px;
+                        padding-right: 30px;
+                        padding-left: 30px;
+                        border-radius: 30px;
                     }
                     .label-marked {
                         color: $Moderatecyan;
