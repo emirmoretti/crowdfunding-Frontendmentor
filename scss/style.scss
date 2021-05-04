@@ -74,36 +74,48 @@ main {
             text-align: center;
             color: $darkgray;
         }
-        .button1 {
-            align-self: flex-end;
-            text-decoration: none;
-            background: $Moderatecyan;
-            color: #ffff;
-            padding: 10px;
-            border-radius: 30px;
-            font-weight: 500;
-            border: none;
-            &:hover {
-                background: $Darkcyan;
-                transition: 1s;
-            }
-            a {
+        .bottom--section--main {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            .button1 {
                 text-decoration: none;
+                background: $Moderatecyan;
                 color: #ffff;
-                padding-right: 2rem;
-                padding-left: 2rem;
+                padding: 10px;
+                border-radius: 30px;
+                font-weight: bold;
+                border: none;
+                &:hover {
+                    background: $Darkcyan;
+                    transition: 1s;
+                }
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    color: #ffff;
+                }
             }
-        }
-        .bookmark {
-            align-self: flex-end;
-            /*text-decoration: none;
-            background: $Moderatecyan;*/
-            width: 3.5rem;
-            margin-left: 10px;
-            border: none;
-            background: none;
-            label {
-                visibility: hidden;
+            .bookmark-container {
+                border: none;
+                background: none;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                #label {
+                    display: none;
+                }
+                .bookmarked {
+                    animation-name: expandir;
+                    animation-duration: 1s;
+                    circle {
+                        fill: $Moderatecyan;
+                    }
+                    path {
+                        fill: #ffff;
+                    }
+                }
             }
         }
     }
@@ -233,18 +245,28 @@ main {
                 .button1 {
                     padding: 16px;
                 }
-                .bookmark {
+                .bookmark-container {
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
                     flex-grow: 1;
                     cursor: default;
-                    img {
+                    #bookmark {
                         cursor: pointer;
+                        position: relative;
+                        left: 10px;
                     }
-                    label {
-                        visibility: visible;
+                    #label {
+                        display: inline-flex;
                         order: 1;
+                        background-color: $gray88;
+                        padding: 12px;
+                        border-radius: 10px;
+                    }
+                    .label-marked {
+                        color: $Moderatecyan;
+                        animation-name: espacio;
+                        animation-duration: 1s;
                     }
                 }
             }
@@ -303,3 +325,27 @@ main {
         right: 78px;
     }
 }
+
+
+@keyframes expandir {
+    0% {
+        transform: scale(0.5);
+      }
+      50% {
+        transform: scale(1.3);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+@keyframes espacio {
+    0% {
+      letter-spacing: 2px;
+    }
+    50% {
+      letter-spacing: 3px;
+    }
+    100% {
+      letter-spacing: 4px;
+    }
+  }
