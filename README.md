@@ -25,7 +25,7 @@ Hello everyone! I'm Emir and this is my challenge from Frontendmentor
 
 ### Links
 
-- Solution URL: [My solution](https://emirmoretti.github.io/crowdfunding-Frontendmentor/)
+- Solution URL: [My solution](https://emirmoretti.github.io/crowdfundingFm/)
 ### Built with
 
 - Semantic HTML5 markup
